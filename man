@@ -1,0 +1,21 @@
+using System;
+using System.Threading;
+
+class Program
+{
+    static void CreativeHelloWorld()
+    {
+        string message = "Hello, World!";
+        foreach (char c in message)
+        {
+            Console.Write(c);
+            Thread.Sleep(100);
+        }
+        Console.WriteLine();
+    }
+
+    static void Main()
+    {
+        CreativeHelloWorld();
+    }
+}
